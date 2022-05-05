@@ -7,24 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>94th EWG-MCDA 2022</title>
     <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
     <link rel="stylesheet" href="./dist/css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-pricingtable@0.2.0/dist/css/bulma-pricingtable.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma-pricingtable@0.2.0/dist/css/bulma-pricingtable.min.css">
     <link rel="stylesheet" href="./node_modules/bulma-timeline/dist/css/bulma-timeline.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-divider@0.2.0/dist/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="./node_modules/bulma-carousel/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
+    <script src="./node_modules/bulma-carousel/dist/js/bulma-carousel.js"></script>
 
 </head>
 
 <body>
-
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
     <section class="hero is-info  is-medium is-bold has-background">
         <img alt="Fill Murray" class="hero-background is-transparent" src="./dist/images/landscape/elouda.jpg" />
         <div class="hero-head has-background-info has-shadow" style="position: fixed; z-index: 1; width:100%">
@@ -50,9 +60,11 @@
                                     <li><a href="#registration">Registration</a></li>
                                     <li><a href="#social">Social Events</a></li>
                                     <li><a href="#venue">Venue</a></li>
+                                    <li><a href="#transport">Transport</a></li>
                                     <li><a href="#accomodation">Accomodation</a></li>
                                     <li><a href="#organization">Organization</a></li>
                                     <li><a href="#contact">Contact</a></li>
+
                                 </ul>
 
                             </div>
@@ -192,6 +204,61 @@
             </div> -->
             <hr>
         </section>
+        <section class="section" id="department">
+            <p class="title">
+                Department of Management Science & Technology
+            </p>
+            <p>
+                In the current business world, business executives, in addition to strong foundations in the fields of
+                finance, marketing, and administration, also require in-depth knowledge of information systems and
+                informatics, in order to be able to develop effective business strategies and decision-making skills,
+                obtained by analyzing a large amount of data.
+            </p>
+            <p>
+                The new Department of Management Science and Technology of the Hellenic Mediterranean University in
+                Agios Nikolaos offers precisely this kind of knowledge that is lacking from the study programs of other
+                higher education institutions in Crete
+            </p>
+            <p>
+                It is a modern and competitive department that is designed based on the current needs of the market and
+                provides its graduates with a competitive advantage in the labor market not only in Greece, but also in
+                the now globalized economic environment.
+            </p>
+            <div class="w3-content w3-display-container my-3">
+                <img class="mySlides" src="./dist/landscape/tei-agnik-2019-06-18_08.50.32_img_30.jpg"
+                    style="width:100%">
+                <img class="mySlides" src="./dist/landscape/tei-agnik-2019-06-19_10.17.25_img_.jpg" style="width:100%">
+                <img class="mySlides" src="./dist/landscape/tei-agnik-2019-06-19_10.17.25_img_.jpg" style="width:100%">
+                <img class="mySlides" src="./dist/landscape/agios_nikolaos.jpg" style="width:100%">
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+            <hr>
+        </section>
         <section class="section" id="program">
             <div class="columns">
 
@@ -214,11 +281,12 @@
                 <div class="column is-7">
                     <h3 class="title">Organizers:</h3>
                     <div class="columns  is-align-content-center ">
-                        <div class="column" >
+                        <div class="column">
                             <img class="column is-4-touch" src="./dist/images/EWG_MCDA_TRANS.png" alt="">
                         </div>
                         <div class="column">
-                            <img class="column is-4-touch" src="./dist/images/organizers/elmepa-logo-150x150.webp" alt="">
+                            <img class="column is-4-touch" src="./dist/images/organizers/elmepa-logo-150x150.webp"
+                                alt="">
                         </div>
                         <div class="column">
                             <img class="column is-4-touch" src="./dist/images/organizers/R.jpg" alt="">
@@ -231,10 +299,12 @@
             </div>
             <div class="tabs is-centered is-boxed">
                 <ul>
-                    <li class="is-active timeline-tab is-unselectable" data_toggle="#day1"><a>15th September 2022</a></li>
+                    <li class="is-active timeline-tab is-unselectable" data_toggle="#day1"><a>15th September 2022</a>
+                    </li>
                     <li class="timeline-tab is-unselectable" data_toggle="#day2"><a>16th September 2022</a></li>
                     <li class="timeline-tab is-unselectable" data_toggle="#day3"><a>17th September 2022</a></li>
-                    <li class="timeline-tab is-unselectable" data_toggle="#download"><a>Download <i class="fa fa-download mx-2"></i></a>
+                    <li class="timeline-tab is-unselectable" data_toggle="#download"><a>Download <i
+                                class="fa fa-download mx-2"></i></a>
                     </li>
                 </ul>
             </div>
@@ -342,7 +412,7 @@
                     
                 </div>
             </div> -->
-            
+
             <!-- <div class="days-timeline" id="day2" style="display:none;">
                 <div class="timeline is-centered">
                     <header class="timeline-header">
@@ -545,9 +615,10 @@
             <p class="title mt-2">
                 Submission form
             </p>
-            <p>Abstracts must be written on a template available <a id="sub_temple" href="./EWG-MCDA-abstract-template.docx" download >HERE</a>.</p>
+            <p>Abstracts must be written on a template available <a id="sub_temple"
+                    href="./EWG-MCDA-abstract-template.docx" download>HERE</a>.</p>
             <p>The abstracts should not be longer than one page. Please select desired type of submission.</p>
-            <p>Please send your submission via email to <a href="mailto:kostas@dpem.tuc.gr">kostas@dpem.tuc.gr</a></p>
+            <p>Please send your submission via email to <a href="mailto:94ewg-mcda@hmu.gr">94ewg-mcda@hmu.gr</a></p>
 
 
 
@@ -578,7 +649,8 @@
                 decision by filling the Registration form.
             </p>
             <p>
-                The registration form is available <a href="https://docs.google.com/forms/d/e/1FAIpQLScau66_eA4-mynxfpHxfC2mISUIYqa1WibXnW1u17-nJV6I6A/viewform">HERE</a>.
+                The registration form is available <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScau66_eA4-mynxfpHxfC2mISUIYqa1WibXnW1u17-nJV6I6A/viewform">HERE</a>.
             </p>
             <hr>
         </section>
@@ -640,6 +712,270 @@
             <p>tel: (+30) <a href="tel:+302841068000">28410 68000</a></p>
             <p>email: <a href="mailto:porto@elounda-sa.com">porto@elounda-sa.com</a></p>
             <hr>
+        </section>
+        <section class="section" id="transport">
+            <h1 class="title is-1 has-shadow">
+                Transport
+            </h1>
+            <p class="subtitle">
+                KTEL LASITHIOU
+            </p>
+            <p>
+                Route time 35-40’ on average
+            </p>
+            <p> <strong>Cost:</strong> 1-2 <i class="fa-solid fa-euro-sign mx-2"></i></p>
+            <p class="subtitle">
+                <i class="fa-solid fa-bus mx-2"></i> Agios Nikolaos - Elounda
+            </p>
+            <hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <!-- <th><abbr title="Day">Pos</abbr></th>
+                    <th>Team</th>
+                    <th><abbr title="">Pld</abbr></th>
+                    <th><abbr title="">W</abbr></th>
+                    <th><abbr title="">D</abbr></th>
+                    <th><abbr title="">L</abbr></th>
+                    <th><abbr title="">GF</abbr></th>
+                    <th><abbr title="Goals against">GA</abbr></th>
+                    <th><abbr title="Goal difference">GD</abbr></th>
+                    <th><abbr title="Points">Pts</abbr></th>
+                    <th>Qualification or relegation</th> -->
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th>Monday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>06:45</th>
+                        <th>07:45</th>
+                        <th>09:00</th>
+                        <th>11:00</th>
+                        <th>13:00</th>
+                        <th>15:00</th>
+                        <th>17:25</th>
+                        <th>19:45</th>
+                        <th>22:00</th>
+                    <tr>
+                        <th>Teusday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>06:45</th>
+                        <th>07:45</th>
+                        <th>09:00</th>
+                        <th>11:00</th>
+                        <th>13:00</th>
+                        <th>15:00</th>
+                        <th>17:25</th>
+                        <th>19:45</th>
+                        <th>22:00</th>
+                    <tr>
+                        <th>Wednesday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>06:45</th>
+                        <th>07:45</th>
+                        <th>09:00</th>
+                        <th>11:00</th>
+                        <th>13:00</th>
+                        <th>15:00</th>
+                        <th>17:25</th>
+                        <th>19:45</th>
+                        <th>22:00</th>
+                    </tr>
+                    <tr>
+                        <th>Thursday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>06:45</th>
+                        <th>07:45</th>
+                        <th>09:00</th>
+                        <th>11:00</th>
+                        <th>13:00</th>
+                        <th>15:00</th>
+                        <th>17:25</th>
+                        <th>19:45</th>
+                        <th>22:00</th>
+                    </tr>
+                    <tr>
+                        <th>Friday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>06:45</th>
+                        <th>07:45</th>
+                        <th>09:00</th>
+                        <th>11:00</th>
+                        <th>13:00</th>
+                        <th>15:00</th>
+                        <th>17:25</th>
+                        <th>19:45</th>
+                        <th>22:00</th>
+                    </tr>
+                    <tr>
+                        <th>Saturday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>06:45</th>
+                        <th>07:45</th>
+                        <th>09:00</th>
+                        <th>11:00</th>
+                        <th>13:00</th>
+                        <th>15:00</th>
+                        <th>17:25</th>
+                        <th>19:45</th>
+                        <th>22:00</th>
+                    </tr>
+                    <tr>
+                        <th>Sunday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>06:45</th>
+                        <th>07:45</th>
+                        <th>09:00</th>
+                        <th>11:00</th>
+                        <th>13:00</th>
+                        <th>15:00</th>
+                        <th>17:25</th>
+                        <th>19:45</th>
+                        <th>22:00</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="subtitle">
+                <i class="fa-solid fa-bus mx-2"></i> Elounda - Agios Nikolaos
+            </p>
+            <hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <!-- <th><abbr title="Day">Pos</abbr></th>
+                    <th>Team</th>
+                    <th><abbr title="">Pld</abbr></th>
+                    <th><abbr title="">W</abbr></th>
+                    <th><abbr title="">D</abbr></th>
+                    <th><abbr title="">L</abbr></th>
+                    <th><abbr title="">GF</abbr></th>
+                    <th><abbr title="Goals against">GA</abbr></th>
+                    <th><abbr title="Goal difference">GD</abbr></th>
+                    <th><abbr title="Points">Pts</abbr></th>
+                    <th>Qualification or relegation</th> -->
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th>Monday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>07:30</th>
+                        <th>08:30</th>
+                        <th>09:40</th>
+                        <th>11:40</th>
+                        <th>13:00</th>
+                        <th>13:40</th>
+                        <th>16:00</th>
+                        <th>18:30</th>
+                        <th>20:30</th>
+                    <tr>
+                        <th>Teusday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>07:30</th>
+                        <th>08:30</th>
+                        <th>09:40</th>
+                        <th>11:40</th>
+                        <th>13:00</th>
+                        <th>13:40</th>
+                        <th>16:00</th>
+                        <th>18:30</th>
+                        <th>20:30</th>
+                    <tr>
+                        <th>Wednesday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>07:30</th>
+                        <th>08:30</th>
+                        <th>09:40</th>
+                        <th>11:40</th>
+                        <th>13:00</th>
+                        <th>13:40</th>
+                        <th>16:00</th>
+                        <th>18:30</th>
+                        <th>20:30</th>
+                    </tr>
+                    <tr>
+                        <th>Thursday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>07:30</th>
+                        <th>08:30</th>
+                        <th>09:40</th>
+                        <th>11:40</th>
+                        <th>13:00</th>
+                        <th>13:40</th>
+                        <th>16:00</th>
+                        <th>18:30</th>
+                        <th>20:30</th>
+                    </tr>
+                    <tr>
+                        <th>Friday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>07:30</th>
+                        <th>08:30</th>
+                        <th>09:40</th>
+                        <th>11:40</th>
+                        <th>13:00</th>
+                        <th>13:40</th>
+                        <th>16:00</th>
+                        <th>18:30</th>
+                        <th>20:30</th>
+                    </tr>
+                    <tr>
+                        <th>Saturday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>07:30</th>
+                        <th>08:30</th>
+                        <th>09:40</th>
+                        <th>11:40</th>
+                        <th>13:00</th>
+                        <th>13:40</th>
+                        <th>16:00</th>
+                        <th>18:30</th>
+                        <th>20:30</th>
+                    </tr>
+                    <tr>
+                        <th>Sunday
+                            <!-- <abbr title="Day"></abbr> -->
+                        </th>
+                        <th>07:30</th>
+                        <th>08:30</th>
+                        <th>09:40</th>
+                        <th>11:40</th>
+                        <th>13:00</th>
+                        <th>13:40</th>
+                        <th>16:00</th>
+                        <th>18:30</th>
+                        <th>20:30</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="subtitle">
+                <i class="fa-solid fa-taxi mx-2"></i> Taxi
+            </p>
+            <p class="">
+                Elounda to Agios Nikolaos 20-25 <i class="fa-solid fa-euro-sign"></i>
+            </p>
         </section>
         <section id="accomodation" class="section">
             <h1 class="title is-1 has-shadow">
@@ -727,6 +1063,108 @@
 
                 </div>
             </div>
+            <div class="container has-text-centered">
+
+                <div class="columns is-vcentered">\
+                    <div class="column is-6 is-offset-1">
+                        <h1 class="title is-2">
+                            Du Lac
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            This property is 4 minutes walk from the beach. Overlooking the beautiful Lake Voulismeni,
+                            Du Lac Hotel provides great-value accommodation with free wireless internet and a relaxed
+                            and friendly base in the heart of Agios Nikolaos.
+                            Du Lac is an excellent choice for budget-conscious travellers looking for comfortable
+                            accommodation in Agios Nikolaos. Choose from a selection of rooms and studios, some offering
+                            lake views from their private balcony. Enjoy modern amenities such as air conditioning and
+                            free wireless internet access.
+                        </h2>
+                        <br>
+                        <p class="has-text-centered">
+                            <a class="button is-medium is-info is-outlined"
+                                href="https://www.booking.com/hotel/gr/du-lac-agios-nikolaos.en-gb.html?aid=375654&label=msn-jrwrFdUb9zKNuCHIkGmz2g-80745410834424%3Atikwd-80745436851624%3Aloc-76%3Aneo%3Amte%3Alp136990%3Adec%3Aqsbooking&sid=dc4092ee14ff587d0583e6869081d55f&all_sr_blocks=2859904_326832387_1_0_0&checkin=2022-09-14&checkout=2022-09-15&dest_id=-815523&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=1&highlighted_blocks=2859904_326832387_1_0_0&hpos=1&matching_block_id=2859904_326832387_1_0_0&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=2859904_326832387_1_0_0__5000&srepoch=1651652798&srpvid=100a3b5e946501a3&type=total&ucfs=1&activeTab=main">
+                                Learn more
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column is-5 is-hidden-touch">
+                        <figure class="image is-square">
+                            <img class="is-rounded" src="./dist/hotels/DuLac.jpg" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container has-text-centered">
+                <div class="columns is-vcentered">
+                    <div class="column is-5 is-hidden-touch">
+                        <figure class="image is-square">
+                            <img class="is-rounded" src="./dist/hotels/Kitro.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="column is-6 is-offset-1">
+                        <h1 class="title is-2">
+                            Kitro Hotel
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            This property is 1 minute walk from the beach. Kitro Hotel is a city, beachfront,
+                            couples-oriented hotel located right above the quiet and clean Kitroplatia beach, 200 m from
+                            the town centre of Agios Nikolaos.
+                            The hotel is conveniently located 59 km away from Nikos Kazantzakis International Airport
+                            and 12 km from the cosmopolitan Elounda Resort.
+                            The hotel is open from May till October and consists of 26 double rooms and 2 suites, which
+                            most of them have a beach or sea view and private balconies.
+                        </h2>
+                        <br>
+                        <p class="has-text-centered">
+                            <a class="button is-medium is-info is-outlined"
+                                href="https://www.booking.com/hotel/gr/sgouros.en-gb.html?aid=375654&label=msn-jrwrFdUb9zKNuCHIkGmz2g-80745410834424%3Atikwd-80745436851624%3Aloc-76%3Aneo%3Amte%3Alp136990%3Adec%3Aqsbooking&sid=dc4092ee14ff587d0583e6869081d55f&all_sr_blocks=9696108_339547618_0_1_0&checkin=2022-09-14&checkout=2022-09-15&dest_id=-815523&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=2&highlighted_blocks=9696108_339547618_0_1_0&hpos=2&matching_block_id=9696108_339547618_0_1_0&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=9696108_339547618_0_1_0__5915&srepoch=1651652798&srpvid=100a3b5e946501a3&type=total&ucfs=1&activeTab=photosGallery">
+                                Learn more
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container has-text-centered">
+                <div class="columns is-vcentered">
+
+                    <div class="column is-6 is-offset-1">
+                        <h1 class="title is-2">
+                            Bellevue Suites
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            This property is 3 minutes walk from the beach. Bellevue Suites is a 3-key fully-furnished
+                            apartment hotel,
+                            in a quiet area in the western entrance of Agios Nikolaos, Crete, overlooking Ammoudi bay.
+                            The closest beach is 300 m away and the distance from the town center is 1 km.
+                            It is most appropriate to cover the needs of families of 2, 3 and 4 persons.
+                            A Bellevue Suites apartment is like a "home" away from home, because it provides all the
+                            facilities needed.
+                        </h2>
+                        <br>
+                        <p class="has-text-centered">
+                            <a class="button is-medium is-info is-outlined"
+                                href="https://www.booking.com/hotel/gr/agios-nikolaos-bellevue-apartments.en-gb.html?aid=375654&label=msn-jrwrFdUb9zKNuCHIkGmz2g-80745410834424%3Atikwd-80745436851624%3Aloc-76%3Aneo%3Amte%3Alp136990%3Adec%3Aqsbooking&sid=dc4092ee14ff587d0583e6869081d55f&all_sr_blocks=9595423_350217250_4_0_0&checkin=2022-09-14&checkout=2022-09-17&dest_id=-815523&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=1&highlighted_blocks=9595423_350217250_4_0_0&hpos=1&matching_block_id=9595423_350217250_4_0_0&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=9595423_350217250_4_0_0__26450&srepoch=1651652829&srpvid=9a933b6d3b3d0203&type=total&ucfs=1&activeTab=main">
+                                Learn more
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column is-5 is-hidden-touch">
+                        <figure class="image is-square">
+                            <img class="is-rounded" src="./dist/hotels/bellvue.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="container has-text-centered my-2">
+                <p class="subtitle">
+                    For those wishing to attend the 94th EWG-MCDA in 2022, it is strongly recommended to book rooms as
+                    soon as possible,
+                    as availability is limited during the high season.
+                    Average Prices for each Hotels are included below...
+                </p>
+            </div>
             <div class="pricing-table is-comparative is-full mt-5">
                 <div class="pricing-plan is-one-quarter is-features">
                     <div class="plan-header">Accomodation</div>
@@ -761,7 +1199,7 @@
                 </div>
 
                 <div class="pricing-plan is-one-quarter is-info">
-                    <div class="plan-header">Elounda Palm Hotel & Suites</div>
+                    <div class="plan-header">Elounda Palm</div>
                     <div class="plan-price"><span class="plan-price-amount"><span
                                 class="plan-price-currency">€</span>189</span>/double</div>
                     <div class="plan-items">
@@ -778,12 +1216,85 @@
                 </div>
 
                 <div class="pricing-plan is-one-quarter is-info">
-                    <div class="plan-header">Casa Porto Boutique Hotel</div>
+                    <div class="plan-header">Casa Porto Boutique </div>
                     <div class="plan-price"><span class="plan-price-amount"><span
                                 class="plan-price-currency">€</span>100</span>/double</div>
                     <div class="plan-items">
                         <div class="plan-item" data-feature="Single">-</div>
                         <!-- <div class="plan-item" data-feature="Double">100 €</div> -->
+                        <div class="plan-item" data-feature="Sea View"><i class="fa fa-check"></i></div>
+                        <div class="plan-item" data-feature="Garden View">-</div>
+                        <div class="plan-item" data-feature="Breakfast">-</div>
+                        <div class="plan-item" data-feature="VAT and taxes"><i class="fa fa-check"></i></div>
+                    </div>
+                    <div class="plan-footer">
+                        <a class="button is-fullwidth" href="https://www.casaportohotel.gr">Go to homepage</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="pricing-table is-comparative is-full mt-5">
+                <div class="pricing-plan is-one-quarter is-features">
+                    <div class="plan-header">Accomodation</div>
+                    <div class="plan-price"><span class="plan-price-amount">&nbsp;</span></div>
+                    <div class="plan-items">
+                        <div class="plan-item">Single</div>
+                        <!-- <div class="plan-item">Double</div> -->
+                        <div class="plan-item">Lake View</div>
+                        <div class="plan-item">Sea View</div>
+                        <div class="plan-item">Garden View</div>
+                        <div class="plan-item">Breakfast</div>
+                        <div class="plan-item">VAT and taxes</div>
+                    </div>
+                    <div class="plan-footer">
+
+                    </div>
+                </div>
+                <div class="pricing-plan is-one-quarter is-info">
+                    <div class="plan-header">Du Lac</div>
+                    <div class="plan-price"><span class="plan-price-amount"><span
+                                class="plan-price-currency">€</span>50</span>/Single/Double Rooms</div>
+                    <div class="plan-items">
+                        <div class="plan-item" data-feature="Single">-</div>
+                        <!-- <div class="plan-item" data-feature="Double">212 €</div> -->
+                        <div class="plan-item" data-feature="Lake View"><i class="fa fa-check"></i></div>
+                        <div class="plan-item" data-feature="Sea View"><i class="fa fa-check"></i></div>
+                        <div class="plan-item" data-feature="Garden View"><i class="fa fa-check"> </i></div>
+                        <div class="plan-item" data-feature="Breakfast"><i class="fa fa-check"></i></div>
+                        <div class="plan-item" data-feature="VAT and taxes"><i class="fa fa-check"></i></div>
+                    </div>
+                    <div class="plan-footer">
+                        <a class="button is-fullwidth" href="https://www.portoelounda.com/en/home">Go to homepage</a>
+                    </div>
+                </div>
+
+                <div class="pricing-plan is-one-quarter is-info">
+                    <div class="plan-header">Kitro Hotel</div>
+                    <div class="plan-price"><span class="plan-price-amount"><span
+                                class="plan-price-currency">€</span>59</span>/Single/Double Rooms</div>
+                    <div class="plan-items">
+                        <div class="plan-item" data-feature="Single">-</div>
+                        <!-- <div class="plan-item" data-feature="Double">189 €</div> -->
+                        <div class="plan-item" data-feature="Lake View">-</div>
+                        <div class="plan-item" data-feature="Sea View">-</div>
+                        <div class="plan-item" data-feature="Garden View"><i class="fa fa-check"></i></div>
+                        <div class="plan-item" data-feature="Breakfast"><i class="fa fa-check"></i></div>
+                        <div class="plan-item" data-feature="VAT and taxes"><i class="fa fa-check"></i></div>
+                    </div>
+                    <div class="plan-footer">
+                        <a class="button is-fullwidth" href="https://www.casaportohotel.gr">Go to homepage</a>
+                    </div>
+                </div>
+
+                <div class="pricing-plan is-one-quarter is-info">
+                    <div class="plan-header">Bellevue Suites</div>
+                    <div class="plan-price"><span class="plan-price-amount"><span
+                                class="plan-price-currency">€</span>90</span>/Single/Double Rooms</div>
+                    <div class="plan-items">
+                        <div class="plan-item" data-feature="Single">-</div>
+                        <!-- <div class="plan-item" data-feature="Double">100 €</div> -->
+                        <div class="plan-item" data-feature="Lake View">-</div>
                         <div class="plan-item" data-feature="Sea View"><i class="fa fa-check"></i></div>
                         <div class="plan-item" data-feature="Garden View">-</div>
                         <div class="plan-item" data-feature="Breakfast">-</div>
@@ -812,12 +1323,176 @@
 
             <p class="subtitle mt-1" s>Organizing Committee</p>
             <ul>
-                <li>Prof. Constantin Zopounidis, Technical University of Crete, Greece</li>
-                <li>
-                    Assist. Prof. Christos Lemonakis, Hellenic Mediterranean University, Greece
+                <li class="card my-2">
+                    <div class="columns card-content">
+                        <div class="column">
+                            <figure class="image is-96x96">
+                                <img class="is-square" src="./dist/commitee/4.png">
+                            </figure>
+                        </div>
+                        <div class="column is-left">
+
+                            <p class="columns">
+                                Christos Floros-Vice-Rector, Professor
+                            </p>
+                            <p class="columns">
+                                Department of Accounting and Finance
+                            </p>
+                            <p class="columns">
+                                @Hellenic Mediterranean University
+                            </p>
+                            <div class="columns">
+                                <a href="mailto:cfloros@hmu.gr">cfloros@hmu.gr</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card my-2">
+                    <div class="columns card-content">
+                        <div class="column">
+                            <figure class="image is-96x96">
+                                <img class="is-square" src="./dist/commitee/drsteliospapadakis.jpg">
+                            </figure>
+                        </div>
+                        <div class="column is-left">
+
+                            <p class="columns">
+                                Stylianos Papadakis, School Dean of
+                                Management Sciences
+                            </p>
+                            <p class="columns">
+                                Department of Management Science and Technology, Agios Nikolaos
+                            </p>
+                            <p class="columns">
+                                @Hellenic Mediterranean University
+                            </p>
+                            <div class="columns">
+                                <a href="mailto:spap@hmu.gr">spap@hmu.gr</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card my-2">
+                    <div class="columns card-content">
+                        <div class="column">
+                            <figure class="image is-96x96">
+                                <img class="is-square" src="./dist/commitee/3.png">
+                            </figure>
+                        </div>
+                        <div class="column is-left">
+
+                            <p class="columns">
+                                Konstantinos Panagiotakis, Associate Professor
+                            </p>
+                            <p class="columns">
+                                Department of Management Science and Technology, Agios Nikolaos
+                            </p>
+                            <p class="columns">
+                                @Hellenic Mediterranean University
+                            </p>
+                            <div class="columns">
+                                <a href="mailto:cpanag@hmu.gr">cpanag@hmu.gr</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card my-2">
+                    <div class="columns card-content">
+                        <div class="column">
+                            <figure class="image is-96x96">
+                                <img class="is-square" src="./dist/commitee/jdim_0.jpg">
+                            </figure>
+                        </div>
+                        <div class="column is-left">
+
+                            <p class="columns">
+                                Ioannis Dimotikalis, Assistant Professor
+                            </p>
+                            <p class="columns">
+                                Department of Management Science and Technology, Agios Nikolaos
+                            </p>
+                            <p class="columns">
+                                @Hellenic Mediterranean University
+                            </p>
+                            <div class="columns">
+                                <a href="mailto:jdim@hmu.gr">jdim@hmu.gr</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card my-2">
+                    <div class="columns card-content">
+                        <div class="column is-left">
+                            <figure class="image is-96x96">
+                                <img class="is-square" src="./dist/commitee/2.png">
+                            </figure>
+                        </div>
+                        <div class="column">
+
+                            <p class="columns">
+                                Michalis Doumpos, Professor
+                            </p>
+                            <p class="columns">
+                                @Technical University of Crete
+                            </p>
+                            <div class="columns">
+                                <a href="mailto:mdoumpos@dpem.tuc.gr">mdoumpos@dpem.tuc.gr</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card my-2">
+                    <div class="columns card-content">
+                        <div class="column">
+                            <figure class="image is-96x96">
+                                <img class="is-square" src="./dist/commitee/1.png">
+                            </figure>
+                        </div>
+                        <div class="column is-left">
+
+                            <p class="columns">
+                                Dr. Foteini Voulgaris, Proffessor Emeritus
+                            </p>
+                            <p class="columns">
+                                Economics and Finance Department of Accounting and Finance
+                            </p>
+                            <p class="columns">
+                                School of Management and Economics
+                            </p>
+                            <p class="columns">
+                                @Hellenic Mediterranean University
+                            </p>
+                            <div class="columns">
+                                <a href="mailto:fvoulgari@hmu.gr">fvoulgari@hmu.gr</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card my-2">
+                    <div class="columns card-content">
+                        <div class="column">
+                            <figure class="image is-96x96">
+                                <img class="is-square" src="./dist/commitee/5.png">
+                            </figure>
+                        </div>
+                        <div class="column is-left">
+
+                            <p class="columns">
+                                Christos Lemonakis,Assistant Proffessor
+                            </p>
+                            <p class="columns">
+                                Department of Management Science and Technology, Agios Nikolaos
+                            </p>
+                            <p class="columns">
+                                @Hellenic Mediterranean University
+                            </p>
+                            <div class="columns">
+                                <a href="mailto:lemonakis@hmu.gr">lemonakis@hmu.gr</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
-
 
         </section>
         <section class="section" id="contact">
@@ -828,13 +1503,13 @@
                 For further queries please contact:
             </p>
             <div class="columns ">
-                <div class="card column is-6 mx-2">
+                <div class="card column is-6 my-2">
 
                     <div class="card-content">
                         <div class="columns">
                             <div class="column">
                                 <figure class="image is-square">
-                                    <img src="./dist/images/commitee/zopounidisS.gif" alt="Placeholder image">
+                                    <img src="./dist/commitee/6.png" alt="Placeholder image">
                                 </figure>
                             </div>
                             <div class="column">
@@ -875,8 +1550,7 @@
                         <div class="columns">
                             <div class="column">
                                 <figure class="image is-square">
-                                    <img src="./dist/images/commitee/Lemonakis foto.jpg.opt107x158o0,0s107x158.jpg"
-                                        alt="Placeholder image">
+                                    <img src="./dist/commitee/5.png" alt="Placeholder image">
                                 </figure>
                             </div>
                             <div class="column">
