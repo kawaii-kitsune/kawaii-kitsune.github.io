@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 
 <head>
     <meta charset="utf-8">
@@ -29,50 +29,104 @@
 
 </head>
 
-<body>
+<body class="has-navbar-fixed-top"> 
     <style>
         .mySlides {
             display: none;
         }
     </style>
-    <section class="hero is-info  is-medium is-bold has-background">
-        <img alt="Fill Murray" class="hero-background is-transparent" src="./dist/images/landscape/elouda.jpg" />
-        <div class="hero-head has-background-info has-shadow" style="position: fixed; z-index: 1; width:100%">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="../">
-                            <img src="./dist/images/EWG_MCDA_TRANS.png" alt="Logo">
-                        </a>
-                        <span class="navbar-burger burger" data-target="navbarMenu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-end">
-                            <div class="tabs is-right">
-                                <ul>
-                                    <li class=""><a href="#about">Home</a></li>
-                                    <li><a href="#program">Program</a></li>
-                                    <li><a href="#submission">Submission</a></li>
-                                    <li><a href="#registration">Registration</a></li>
-                                    <li><a href="#social">Social Events</a></li>
-                                    <li><a href="#venue">Venue</a></li>
-                                    <li><a href="#transport">Transport</a></li>
-                                    <li><a href="#accomodation">Accomodation</a></li>
-                                    <li><a href="#organization">Organization</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+    <!-- <nav class="navbar is-info is-fixed-top" >
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                    <img src="./dist/images/EWG_MCDA_TRANS.png" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="tabs is-right">
+                        <ul>
+                            <li class=""><a href="#about" class="has-text-light">Home</a></li>
+                            <li class=""><a href="#department" class="has-text-light">About Us</a></li>
+                            <li><a href="#program" class="has-text-light">Program</a></li>
+                            <li><a href="#submission" class="has-text-light">Submission</a></li>
+                            <li><a href="#registration" class="has-text-light">Registration</a></li>
+                            <li><a href="#social" class="has-text-light">Social Events</a></li>
+                            <li><a href="#venue" class="has-text-light">Venue</a></li>
+                            <li><a href="#transport" class="has-text-light">Transport</a></li>
+                            <li><a href="#accomodation" class="has-text-light">Accomodation</a></li>
+                            <li><a href="#organization" class="has-text-light">Organization</a></li>
+                            <li><a href="#contact" class="has-text-light">Contact</a></li>
 
-                                </ul>
+                        </ul>
 
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
+    </nav> -->
+    <nav class="navbar is-info is-fixed-top" style="height: 80px;">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="./dist/EWG_MCDA_TRANS.png" alt="EWG_MCDA_LOGO" width="70" height="100">
+          </a>
+          <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#about">
+              Home
+            </a>
+            <a class="navbar-item" href="#department">
+                About Us
+            </a>
+            <a class="navbar-item" href="#program">
+                Program
+              </a>
+            <a class="navbar-item" href="#submission">
+                Submission
+              </a>
+            <a class="navbar-item" href="#registration">
+                Registration
+              </a>
+            <a class="navbar-item" href="#social">
+                Social Events
+              </a>
+            <a class="navbar-item" href="#venue">
+                Venue
+              </a>
+            <a class="navbar-item" href="#transport">
+                Transport
+              </a>
+            <a class="navbar-item" href="#accomodation">
+                Accomodation
+              </a>
+            <a class="navbar-item" href="#organization">
+                Organization
+              </a>
+            <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+          </div>
+      
+          
+        </div>
+      </nav>
+    <section class="hero is-info  is-medium is-bold has-background">
+        <img alt="Agios Nikolaos" class="hero-background is-transparent" src="./dist/images/landscape/elouda.jpg" />
+        <!-- <div class="hero-head has-background-info has-shadow" >
+            
+        </div> -->
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-alt-circle-up"></i></button>
         <div class="hero-body is-medium">
             <div class="container has-text-centered">
@@ -270,8 +324,8 @@
                         </h3>
                     </div>
                     <div class="column">
-                        <p> The program of the conference will be available <a href="">HERE</a>.</p>
-                        <p> The book of abstracts will be available <a href="">HERE</a>.</p>
+                        <p> The program of the conference will be available <a href="" class="has-text-link">HERE</a>.</p>
+                        <p> The book of abstracts will be available <a href="" class="has-text-link">HERE</a>.</p>
                         <p> The conference will be held in hybrid form. The organizer will enable both online and
                             on-site presentations.</p>
                         <p>For the participants attending the conference in Elouda, the venue will take place on
@@ -616,7 +670,7 @@
                 Submission form
             </p>
             <p>Abstracts must be written on a template available <a id="sub_temple"
-                    href="./EWG-MCDA-abstract-template.docx" download>HERE</a>.</p>
+                    href="./EWG-MCDA-abstract-template.docx" download class="has-text-link">HERE</a>.</p>
             <p>The abstracts should not be longer than one page. Please select desired type of submission.</p>
             <p>Please send your submission via email to <a href="mailto:94ewg-mcda@hmu.gr">94ewg-mcda@hmu.gr</a></p>
 
@@ -625,7 +679,7 @@
             <p class="title mt-2">Key dates and deadlines <i class="fa fa-calendar-check-o"></i></p>
             <p class="subtitle">
                 <ul>
-                    <li>Abstract submission deadline: July 31, 2022</li>
+                    <li>Abstract submission deadline: July 15, 2022</li>
                     <li>Notification of acceptance to authors: August 14, 2022, at the latest</li>
                     <li>Registration to the meeting deadline: August 30, 2022</li>
                     <li>Event dates: September 15-17, 2022</li>
@@ -640,7 +694,7 @@
                 Registration
             </h1>
             <p>
-                The registration will be open from February 1st until March 30th. We will allow registration until the
+                The registration will be open from June 1st until September 1st. We will allow registration until the
                 last moment hoping that the situation will improve worldwide and allow most participants to join us in
                 Elouda.
             </p>
@@ -650,7 +704,7 @@
             </p>
             <p>
                 The registration form is available <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScau66_eA4-mynxfpHxfC2mISUIYqa1WibXnW1u17-nJV6I6A/viewform">HERE</a>.
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScau66_eA4-mynxfpHxfC2mISUIYqa1WibXnW1u17-nJV6I6A/viewform" class="has-text-link">HERE</a>.
             </p>
             <hr>
         </section>
@@ -710,7 +764,7 @@
             </div>
             <p>Porto Elounda, Elounda, Crete Island, Greece 72053, Greece </p>
             <p>tel: (+30) <a href="tel:+302841068000">28410 68000</a></p>
-            <p>email: <a href="mailto:porto@elounda-sa.com">porto@elounda-sa.com</a></p>
+            <p>email: <a class="has-text-link" href="mailto:porto@elounda-sa.com">porto@elounda-sa.com</a></p>
             <hr>
         </section>
         <section class="section" id="transport">
@@ -986,8 +1040,8 @@
 
                 <div class="columns is-vcentered">
                     <div class="column is-5 is-hidden-touch">
-                        <figure class="image is-square">
-                            <img class="is-rounded" src="./dist/images/hotels/PortoElouda.jpg" alt="">
+                        <figure class="image is-rounded">
+                            <img class="is-rounded" src="./dist/hotels/PortoElouda.png" alt="">
                         </figure>
                     </div>
                     <div class="column is-6 is-offset-1">
@@ -1028,8 +1082,8 @@
                         </p>
                     </div>
                     <div class="column is-5 is-hidden-touch">
-                        <figure class="image is-square">
-                            <img class="is-rounded" src="./dist/images/hotels/Elounda Palm Hotel & Suites.jpg" alt="">
+                        <figure class="image is-rounded">
+                            <img class="is-rounded" src="./dist/hotels/Elounda Palm Hotel & Suites.png" alt="">
                         </figure>
                     </div>
                 </div>
@@ -1037,8 +1091,8 @@
             <div class="container has-text-centered">
                 <div class="columns is-vcentered">
                     <div class="column is-5 is-hidden-touch">
-                        <figure class="image is-square">
-                            <img class="is-rounded" src="./dist/images/hotels/Casa Porto Boutique Hotel.jpg" alt="">
+                        <figure class="image is-rounded">
+                            <img class="is-rounded" src="./dist/hotels/Casa Porto Boutique Hotel.png" alt="">
                         </figure>
                     </div>
                     <div class="column is-6 is-offset-1">
@@ -1065,7 +1119,7 @@
             </div>
             <div class="container has-text-centered">
 
-                <div class="columns is-vcentered">\
+                <div class="columns is-vcentered">
                     <div class="column is-6 is-offset-1">
                         <h1 class="title is-2">
                             Du Lac
@@ -1088,8 +1142,8 @@
                         </p>
                     </div>
                     <div class="column is-5 is-hidden-touch">
-                        <figure class="image is-square">
-                            <img class="is-rounded" src="./dist/hotels/DuLac.jpg" alt="">
+                        <figure class="image is-rounded">
+                            <img class="is-rounded" src="./dist/hotels/DuLac.png" alt="">
                         </figure>
                     </div>
 
@@ -1098,8 +1152,8 @@
             <div class="container has-text-centered">
                 <div class="columns is-vcentered">
                     <div class="column is-5 is-hidden-touch">
-                        <figure class="image is-square">
-                            <img class="is-rounded" src="./dist/hotels/Kitro.jpg" alt="">
+                        <figure class="image is-rounded">
+                            <img class="is-rounded" src="./dist/hotels/Kitro.png" alt="">
                         </figure>
                     </div>
                     <div class="column is-6 is-offset-1">
@@ -1151,8 +1205,8 @@
                         </p>
                     </div>
                     <div class="column is-5 is-hidden-touch">
-                        <figure class="image is-square">
-                            <img class="is-rounded" src="./dist/hotels/bellvue.jpg" alt="">
+                        <figure class="image is-rounded">
+                            <img class="is-rounded" src="./dist/hotels/bellvue.png" alt="">
                         </figure>
                     </div>
                 </div>
@@ -1327,7 +1381,7 @@
                     <div class="columns card-content">
                         <div class="column">
                             <figure class="image is-96x96">
-                                <img class="is-square" src="./dist/commitee/4.png">
+                                <img class="is-rounded" src="./dist/commitee/4.png">
                             </figure>
                         </div>
                         <div class="column is-left">
@@ -1341,9 +1395,7 @@
                             <p class="columns">
                                 @Hellenic Mediterranean University
                             </p>
-                            <div class="columns">
-                                <a href="mailto:cfloros@hmu.gr">cfloros@hmu.gr</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -1351,7 +1403,7 @@
                     <div class="columns card-content">
                         <div class="column">
                             <figure class="image is-96x96">
-                                <img class="is-square" src="./dist/commitee/drsteliospapadakis.jpg">
+                                <img class="is-rounded" src="./dist/commitee/drsteliospapadakis.jpg">
                             </figure>
                         </div>
                         <div class="column is-left">
@@ -1366,9 +1418,7 @@
                             <p class="columns">
                                 @Hellenic Mediterranean University
                             </p>
-                            <div class="columns">
-                                <a href="mailto:spap@hmu.gr">spap@hmu.gr</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -1376,7 +1426,7 @@
                     <div class="columns card-content">
                         <div class="column">
                             <figure class="image is-96x96">
-                                <img class="is-square" src="./dist/commitee/3.png">
+                                <img class="is-rounded" src="./dist/commitee/3.png">
                             </figure>
                         </div>
                         <div class="column is-left">
@@ -1390,9 +1440,7 @@
                             <p class="columns">
                                 @Hellenic Mediterranean University
                             </p>
-                            <div class="columns">
-                                <a href="mailto:cpanag@hmu.gr">cpanag@hmu.gr</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -1400,7 +1448,7 @@
                     <div class="columns card-content">
                         <div class="column">
                             <figure class="image is-96x96">
-                                <img class="is-square" src="./dist/commitee/jdim_0.jpg">
+                                <img class="is-rounded" src="./dist/commitee/jdim_0.png">
                             </figure>
                         </div>
                         <div class="column is-left">
@@ -1414,9 +1462,7 @@
                             <p class="columns">
                                 @Hellenic Mediterranean University
                             </p>
-                            <div class="columns">
-                                <a href="mailto:jdim@hmu.gr">jdim@hmu.gr</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -1424,7 +1470,7 @@
                     <div class="columns card-content">
                         <div class="column is-left">
                             <figure class="image is-96x96">
-                                <img class="is-square" src="./dist/commitee/2.png">
+                                <img class="is-rounded" src="./dist/commitee/2.png">
                             </figure>
                         </div>
                         <div class="column">
@@ -1435,9 +1481,7 @@
                             <p class="columns">
                                 @Technical University of Crete
                             </p>
-                            <div class="columns">
-                                <a href="mailto:mdoumpos@dpem.tuc.gr">mdoumpos@dpem.tuc.gr</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -1445,13 +1489,13 @@
                     <div class="columns card-content">
                         <div class="column">
                             <figure class="image is-96x96">
-                                <img class="is-square" src="./dist/commitee/1.png">
+                                <img class="is-rounded" src="./dist/commitee/1.png">
                             </figure>
                         </div>
                         <div class="column is-left">
 
                             <p class="columns">
-                                Dr. Foteini Voulgaris, Proffessor Emeritus
+                                Dr. Foteini Voulgaris, Professor Emeritus
                             </p>
                             <p class="columns">
                                 Economics and Finance Department of Accounting and Finance
@@ -1462,9 +1506,7 @@
                             <p class="columns">
                                 @Hellenic Mediterranean University
                             </p>
-                            <div class="columns">
-                                <a href="mailto:fvoulgari@hmu.gr">fvoulgari@hmu.gr</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -1472,13 +1514,13 @@
                     <div class="columns card-content">
                         <div class="column">
                             <figure class="image is-96x96">
-                                <img class="is-square" src="./dist/commitee/5.png">
+                                <img class="is-rounded" src="./dist/commitee/5.png">
                             </figure>
                         </div>
                         <div class="column is-left">
 
                             <p class="columns">
-                                Christos Lemonakis,Assistant Proffessor
+                                Christos Lemonakis,Assistant Professor
                             </p>
                             <p class="columns">
                                 Department of Management Science and Technology, Agios Nikolaos
@@ -1486,9 +1528,7 @@
                             <p class="columns">
                                 @Hellenic Mediterranean University
                             </p>
-                            <div class="columns">
-                                <a href="mailto:lemonakis@hmu.gr">lemonakis@hmu.gr</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -1500,15 +1540,36 @@
                 Contact Information
             </p>
             <p class="subtitle">
-                For further queries please contact:
+                For further queries please contact us:
             </p>
+            <p class="subtitle"><strong>Email:</strong> <a class="has-text-link"href="mailto:94ewg-mcda@hmu.gr">94ewg-mcda@hmu.gr</a></p>
             <div class="columns ">
-                <div class="card column is-6 my-2">
+                <article class="media col-5">
+                    <figure class="media-left">
+                      <p class="image is-128x128">
+                        <img src="./dist/commitee/6.png">
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Prof. Constantin Zopounidis</strong> <small><a href="https://gr.linkedin.com/in/constantin-zopounidis-18a1841a1?challengeId=AQH70AAxx1YhmgAAAYCTuBurtk0fBEmVE8YTfzmkQejWbTDhUPW_yH4mOBphTutwiEXvSjjIdG_N6U8oTK77jyl7xu322oKQdw&submissionId=5ba77af0-032e-ec16-fea5-a8bfb017080d">@constantin-zopounidis</a></small>
+                          <br>
+                          <p>Technical University of Crete, Greece
+                        </p>
+
+                        <a class="has-text-link" href="mailto:kostas@dpem.tuc.gr
+                        ">kostas@dpem.tuc.gr</a>
+                        </p>
+                      </div>
+                      
+                  </article>
+                <!-- <div class="card column is-6 my-2">
 
                     <div class="card-content">
                         <div class="columns">
-                            <div class="column">
-                                <figure class="image is-square">
+                            <div class="column ">
+                                <figure class="image is-128x128">
                                     <img src="./dist/commitee/6.png" alt="Placeholder image">
                                 </figure>
                             </div>
@@ -1519,7 +1580,7 @@
                                             <img src="./dist/images/organizers/R.jpg" alt="Placeholder image">
                                         </figure>
                                     </div>
-                                    <div class="media-content">
+                                    <div class="media-content ">
                                         <p class="title is-4">Prof. Constantin Zopounidis</p>
                                         <p class="subtitle is-6"><a
                                                 href="https://www.linkedin.com/in/constantin-zopounidis-18a1841a1/"><i
@@ -1531,7 +1592,7 @@
                                     <p>Technical University of Crete, Greece
                                     </p>
 
-                                    <a href="mailto:kostas@dpem.tuc.gr
+                                    <a class="has-text-link" href="mailto:kostas@dpem.tuc.gr
                                     ">kostas@dpem.tuc.gr</a>
                                     <div>
                                     </div>
@@ -1542,14 +1603,13 @@
 
 
                     </div>
-                </div>
+                </div> -->
                 <div class="is-divider-vertical" data-content="OR"></div>
-                <div class=" column card is-6">
-
+                <!-- <div class=" column card is-6">
                     <div class="card-content">
                         <div class="columns">
                             <div class="column">
-                                <figure class="image is-square">
+                                <figure class="image is-128x128">
                                     <img src="./dist/commitee/5.png" alt="Placeholder image">
                                 </figure>
                             </div>
@@ -1572,7 +1632,7 @@
                                 <div class="content">
                                     <p>Hellenic Mediterranean University, Greece</p>
 
-                                    <a href="mailto:lemonakis@hmu.gr">lemonakis@hmu.gr</a>
+                                    <a class="has-text-link" href="mailto:lemonakis@hmu.gr">lemonakis@hmu.gr</a>
                                     <div>
                                     </div>
                                 </div>
@@ -1580,7 +1640,26 @@
                             </div>
                         </div>
 
-                    </div>
+                </div> -->
+                <article class="media col-5">
+                    <figure class="media-left">
+                      <p class="image is-128x128">
+                        <img src="./dist/commitee/5.png">
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Assist. Prof. Christos Lemonakis</strong> <small><a href="https://www.linkedin.com/in/christos-lemonakis-811b34148/">@christos-lemonakis</a></small>
+                          <br>
+                          <p>Hellenic Mediterranean University, Greece
+                        </p>
+
+                        <a class="has-text-link" href="mailto:lemonakis@hmu.gr">lemonakis@hmu.gr</a>
+                        
+                      </div>
+                      
+                  </article>
         </section>
         <section class="section" id="goodbye">
             <h1 class="title is-1" style="text-align: center;">We are waiting for you in
