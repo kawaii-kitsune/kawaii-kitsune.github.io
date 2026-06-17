@@ -1,9 +1,23 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6244C5;
-    --secondary: #FFC448;
-    --light: #FAFAFB;
-    --dark: #12141D;
+    --primary: #0F3D3E;
+    --secondary: #C7A86B;
+    --light: #F4F1EA;
+    --dark: #111111;
+    --muted: #5E6259;
+    --surface: #FFFCF6;
+    --surface-strong: #F0E9DD;
+    --line: rgba(17, 17, 17, .09);
+}
+
+body {
+    background: var(--surface);
+    color: var(--dark);
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -.02em;
 }
 
 .back-to-top {
@@ -42,13 +56,36 @@
 
 /*** Button ***/
 .btn {
-    font-weight: 500;
-    transition: .5s;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: .3s ease;
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: #0a2b2c;
+    border-color: #0a2b2c;
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: rgba(15, 61, 62, .2);
+    background: rgba(255, 255, 255, .65);
+}
+
+.btn-outline-primary:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+    border-color: var(--primary);
 }
 
 .btn-square {
@@ -80,13 +117,17 @@
 /*** Navbar ***/
 .navbar.fixed-top {
     display: none;
-    transition: .5s;
+    transition: .3s ease;
+    backdrop-filter: blur(16px);
+    background: rgba(255, 252, 246, .88) !important;
+    border-bottom: 1px solid var(--line);
+    box-shadow: none !important;
 }
 
 .navbar .navbar-nav .nav-link {
     padding: 20px 15px;
-    color: var(--dark);
-    font-size: 18px;
+    color: var(--muted);
+    font-size: 16px;
     font-weight: 600;
     outline: none;
 }
@@ -106,7 +147,10 @@
 /*** Header ***/
 #home {
     margin-bottom: 6rem;
-    background: url(../img/bg-header.png) left top no-repeat;
+    background:
+        radial-gradient(circle at top left, rgba(199, 168, 107, .18), transparent 28%),
+        radial-gradient(circle at top right, rgba(15, 61, 62, .12), transparent 35%),
+        linear-gradient(180deg, #fcfaf5 0%, #f4f1ea 100%);
 }
 
 .hero-section {
@@ -119,13 +163,14 @@
     font-weight: 700;
     letter-spacing: .12em;
     text-transform: uppercase;
+    color: var(--secondary) !important;
 }
 
 .hero-summary {
     max-width: 600px;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: rgba(18, 20, 29, .85);
+    font-size: 1.08rem;
+    line-height: 1.9;
+    color: var(--muted);
 }
 
 .hero-highlights {
@@ -137,9 +182,10 @@
 .hero-highlights span {
     padding: 10px 14px;
     border-radius: 999px;
-    background: rgba(98, 68, 197, .08);
-    color: var(--dark);
-    font-weight: 600;
+    background: rgba(15, 61, 62, .06);
+    color: var(--primary);
+    font-weight: 700;
+    border: 1px solid rgba(15, 61, 62, .08);
 }
 
 .hero-visual {
@@ -149,10 +195,12 @@
 
 .hero-photo-wrap {
     position: relative;
-    max-width: 430px;
-    padding: 30px 20px 0;
-    border-radius: 32px;
-    background: radial-gradient(circle at top, rgba(255, 196, 72, .22), rgba(98, 68, 197, .06) 55%, transparent 72%);
+    max-width: 450px;
+    padding: 36px 30px 0;
+    border-radius: 36px;
+    background:
+        radial-gradient(circle at top, rgba(199, 168, 107, .28), rgba(15, 61, 62, .06) 58%, transparent 75%),
+        linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.45));
 }
 
 .hero-photo-wrap img {
@@ -276,9 +324,9 @@
 .impact-item {
     padding: 22px 24px;
     border-radius: 18px;
-    background: #FFFFFF;
-    border: 1px solid rgba(18, 20, 29, .08);
-    box-shadow: 0 10px 30px rgba(18, 20, 29, .05);
+    background: rgba(255, 255, 255, .75);
+    border: 1px solid var(--line);
+    box-shadow: 0 12px 30px rgba(17, 17, 17, .04);
 }
 
 .impact-item h5 {
@@ -304,10 +352,10 @@
 .case-study,
 .publication-side {
     padding: 28px;
-    background: #FFFFFF;
-    border: 1px solid rgba(18, 20, 29, .08);
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(18, 20, 29, .05);
+    background: rgba(255, 255, 255, .8);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 16px 34px rgba(17, 17, 17, .04);
 }
 
 .stack-label,
@@ -331,7 +379,7 @@
 .stack-tags span {
     padding: 8px 12px;
     border-radius: 999px;
-    background: rgba(98, 68, 197, .08);
+    background: rgba(15, 61, 62, .07);
     font-size: .9rem;
     font-weight: 600;
 }
@@ -343,34 +391,34 @@
 
 .timeline-item h6 {
     margin-bottom: 12px;
-    color: rgba(18, 20, 29, .7);
+    color: var(--muted);
 }
 
 
 /*** Projects & Research ***/
 #projects-research .project-overview {
-    background: linear-gradient(135deg, rgba(98, 68, 197, .08), rgba(255, 196, 72, .16));
-    border: 1px solid rgba(98, 68, 197, .12);
+    background: linear-gradient(135deg, rgba(15, 61, 62, .06), rgba(199, 168, 107, .14));
+    border: 1px solid rgba(15, 61, 62, .09);
 }
 
 .project-card {
     height: 100%;
     padding: 32px 28px;
     overflow: hidden;
-    background: #FFFFFF;
-    border: 1px solid rgba(18, 20, 29, .08);
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(18, 20, 29, .05);
+    background: rgba(255, 255, 255, .82);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 16px 34px rgba(17, 17, 17, .04);
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(18, 20, 29, .1);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(17, 17, 17, .08);
 }
 
 .project-card-accent {
-    background: linear-gradient(180deg, #FFFFFF, rgba(98, 68, 197, .06));
+    background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(199, 168, 107, .08));
 }
 
 .project-logo {
@@ -380,13 +428,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    background: linear-gradient(135deg, var(--primary), #8b74dc);
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--primary), #205e5f);
     color: #FFFFFF;
     font-size: 1.1rem;
     font-weight: 800;
     letter-spacing: .08em;
-    box-shadow: 0 12px 24px rgba(98, 68, 197, .22);
+    box-shadow: 0 12px 24px rgba(15, 61, 62, .18);
 }
 
 .project-logo-image {
@@ -396,8 +444,8 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF;
-    border: 1px solid rgba(18, 20, 29, .08);
+    background: rgba(255, 255, 255, .95);
+    border: 1px solid var(--line);
     box-shadow: none;
 }
 
@@ -423,7 +471,7 @@
 .project-role {
     margin-bottom: 10px;
     font-weight: 700;
-    color: rgba(18, 20, 29, .8);
+    color: var(--muted);
 }
 
 #projects-research h4 {
@@ -437,6 +485,32 @@
 
 .case-points li + li {
     margin-top: 10px;
+}
+
+.container-xxl,
+.container-fluid {
+    position: relative;
+}
+
+#about,
+#skill,
+#projects-research,
+#contact {
+    background: transparent;
+}
+
+#contact .container {
+    background: rgba(255,255,255,.76);
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 18px 36px rgba(17,17,17,.04);
+}
+
+#contact iframe {
+    border-radius: 18px;
+    background: #fff;
 }
 
 @media (max-width: 991.98px) {
@@ -453,6 +527,11 @@
     #about .years h5 {
         letter-spacing: 18px;
         margin-right: -18px;
+    }
+
+    #contact .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
