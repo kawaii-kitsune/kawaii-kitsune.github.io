@@ -566,7 +566,7 @@ a {
     }
 
     .hero-shell {
-        padding-top: 6.5rem;
+        padding: 6rem 0 2rem;
     }
 
     .hero-grid,
@@ -583,15 +583,39 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .hero-panel {
+        gap: .85rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 11vw, 3.6rem);
+    }
+
+    .hero-summary {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .hero-actions {
+        margin-top: 1.5rem;
+    }
+
     .section-block {
-        padding: 3.75rem 0;
+        padding: 3.25rem 0;
     }
 
     .section-title {
         max-width: none;
+        font-size: clamp(1.8rem, 8vw, 2.7rem);
     }
 
-    .hero-title {
-        max-width: none;
+    .skill-group,
+    .edu-panel,
+    .about-card,
+    .spotlight-card,
+    .project-story,
+    .case-study,
+    .contact-form-wrap {
+        padding: 1.25rem;
     }
 }
