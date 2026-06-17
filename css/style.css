@@ -1,13 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0F3D3E;
-    --secondary: #C7A86B;
-    --light: #F4F1EA;
-    --dark: #111111;
-    --muted: #5E6259;
-    --surface: #FFFCF6;
-    --surface-strong: #F0E9DD;
-    --line: rgba(17, 17, 17, .09);
+    --primary: #183A5A;
+    --secondary: #4B6B88;
+    --light: #EEF3F8;
+    --dark: #0E1A27;
+    --muted: #556779;
+    --surface: #F7FAFD;
+    --surface-strong: #E7EFF6;
+    --line: rgba(24, 58, 90, .10);
 }
 
 body {
@@ -84,7 +84,7 @@ p {
 
 .btn-outline-primary {
     color: var(--primary);
-    border-color: rgba(15, 61, 62, .2);
+    border-color: rgba(24, 58, 90, .18);
     background: rgba(255, 255, 255, .65);
 }
 
@@ -125,7 +125,7 @@ p {
     display: none;
     transition: .3s ease;
     backdrop-filter: blur(16px);
-    background: rgba(255, 252, 246, .88) !important;
+    background: rgba(247, 250, 253, .9) !important;
     border-bottom: 1px solid var(--line);
     box-shadow: none !important;
 }
@@ -154,9 +154,9 @@ p {
 #home {
     margin-bottom: 4rem;
     background:
-        radial-gradient(circle at top left, rgba(199, 168, 107, .18), transparent 28%),
-        radial-gradient(circle at top right, rgba(15, 61, 62, .12), transparent 35%),
-        linear-gradient(180deg, #fcfaf5 0%, #f4f1ea 100%);
+        radial-gradient(circle at top left, rgba(75, 107, 136, .16), transparent 28%),
+        radial-gradient(circle at top right, rgba(24, 58, 90, .12), transparent 35%),
+        linear-gradient(180deg, #f9fbfe 0%, #eef3f8 100%);
 }
 
 .hero-section {
@@ -188,10 +188,10 @@ p {
 .hero-highlights span {
     padding: 10px 14px;
     border-radius: 999px;
-    background: rgba(15, 61, 62, .06);
+    background: rgba(24, 58, 90, .06);
     color: var(--primary);
     font-weight: 700;
-    border: 1px solid rgba(15, 61, 62, .08);
+    border: 1px solid rgba(24, 58, 90, .08);
 }
 
 .hero-visual {
@@ -205,7 +205,7 @@ p {
     padding: 36px 30px 0;
     border-radius: 36px;
     background:
-        radial-gradient(circle at top, rgba(199, 168, 107, .28), rgba(15, 61, 62, .06) 58%, transparent 75%),
+        radial-gradient(circle at top, rgba(75, 107, 136, .22), rgba(24, 58, 90, .06) 58%, transparent 75%),
         linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.45));
     box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
 }
@@ -407,7 +407,7 @@ p {
 .stack-tags span {
     padding: 8px 12px;
     border-radius: 999px;
-    background: rgba(15, 61, 62, .07);
+    background: rgba(24, 58, 90, .07);
     font-size: .9rem;
     font-weight: 600;
 }
@@ -426,8 +426,8 @@ p {
 
 /*** Projects & Research ***/
 #projects-research .project-overview {
-    background: linear-gradient(135deg, rgba(15, 61, 62, .06), rgba(199, 168, 107, .14));
-    border: 1px solid rgba(15, 61, 62, .09);
+    background: linear-gradient(135deg, rgba(24, 58, 90, .05), rgba(75, 107, 136, .12));
+    border: 1px solid rgba(24, 58, 90, .09);
 }
 
 .project-card {
@@ -447,7 +447,7 @@ p {
 }
 
 .project-card-accent {
-    background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(199, 168, 107, .08));
+    background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(75, 107, 136, .08));
 }
 
 .project-logo {
@@ -458,12 +458,12 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 18px;
-    background: linear-gradient(135deg, var(--primary), #205e5f);
+    background: linear-gradient(135deg, var(--primary), #34597b);
     color: #FFFFFF;
     font-size: 1.1rem;
     font-weight: 800;
     letter-spacing: .08em;
-    box-shadow: 0 12px 24px rgba(15, 61, 62, .18);
+    box-shadow: 0 12px 24px rgba(24, 58, 90, .18);
 }
 
 .project-logo-image {
