@@ -8,46 +8,30 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-    <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
+    <nav class="navbar navbar-expand-lg fixed-top px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="#home" class="navbar-brand d-block d-lg-none">
             <h1 class="text-primary fw-bold m-0" id="burgir">BK</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -57,438 +41,327 @@
             <div class="navbar-nav ms-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#projects-research" class="nav-item nav-link">Projects</a>
-                <!-- <a href="#service" class="nav-item nav-link">Services</a> -->
+                <a href="#skill" class="nav-item nav-link">Capabilities</a>
+                <a href="#projects-research" class="nav-item nav-link">Work</a>
             </div>
-            <a href="index.html" class="navbar-brand brand-badge py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 id="pageName" class="text-primary fw-bold m-0"><script>document.getElementById('pageName').innerText='<Babis />';document.getElementById('burgir').innerText='<Babis />'</script></h1>
+            <a href="#home" class="navbar-brand brand-badge py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 id="pageName" class="text-primary fw-bold m-0">
+                    <script>
+                        document.getElementById('pageName').innerText = '<Babis />';
+                        document.getElementById('burgir').innerText = '<Babis />';
+                    </script>
+                </h1>
             </a>
             <div class="navbar-nav me-auto py-0">
-                <!-- <a href="#project" class="nav-item nav-link">Projects</a>
-                <a href="#team" class="nav-item nav-link">Team</a>
-                <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
-    <!-- Navbar End -->
 
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0 hero-section" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <p class="hero-kicker text-primary mb-3">AI Project Lead • Full-Stack Engineer • Cybersecurity Systems</p>
-                    <h1 class="display-3 mb-3">Charalampos "Babis" Kolokouris</h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">AI Project Lead Developer, Full-Stack Developer, Cybersecurity Engineer, Machine Learning Engineer, Software Engineer</div>
-                    <p class="hero-summary mt-4 mb-0">Lead AI Developer building production-grade cybersecurity and data systems across Horizon Europe collaborations, with hands-on work spanning AI pipelines, backend services, and product-facing interfaces.</p>
-                    <div class="hero-highlights mt-4">
-                        <span>Adrestia R&amp;D</span>
-                        <span>IEEE CAI 2026</span>
-                        <span>5 Horizon Europe projects</span>
-                    </div>
-                    <div class="hero-actions d-flex flex-wrap align-items-center gap-3 pt-4">
+    <main>
+        <section class="hero-shell" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="hero-kicker">AI Project Lead • Full-Stack Engineer • Cybersecurity Systems</p>
+                    <h1 class="hero-title">Building production AI systems where research meets operational reality.</h1>
+                    <h2 class="typed-text-output d-inline hero-typed"></h2>
+                    <div class="typed-text d-none">Lead AI Developer, Full-Stack Engineer, Cybersecurity Systems Builder, Machine Learning Engineer, Product-Minded Research Contributor</div>
+                    <p class="hero-summary">Lead AI Developer at Adrestia R&amp;D, shipping intelligent systems across cybersecurity, distributed platforms, and Horizon Europe collaborations with hands-on work in AI pipelines, backend services, and product-facing interfaces.</p>
+                    <div class="hero-actions d-flex flex-wrap gap-3">
                         <a href="/Profile-2.pdf" download class="btn btn-primary py-3 px-4">Download CV</a>
                         <a href="mailto:kolokouris.babis@gmail.com" class="btn btn-outline-primary py-3 px-4">Email Me</a>
                         <a href="https://www.linkedin.com/in/charalampos-kolokouris-02453a206" class="btn btn-outline-primary py-3 px-4" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="https://github.com/kawaii-kitsune" class="btn btn-outline-primary py-3 px-4" target="_blank" rel="noopener">GitHub</a>
                     </div>
                 </div>
-                <div class="col-lg-6 hero-visual">
+                <div class="hero-panel wow fadeInUp" data-wow-delay="0.3s">
                     <div class="hero-photo-wrap">
                         <img class="img-fluid" src="img/profile.png" alt="Portrait of Charalampos Babis Kolokouris">
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-xxl py-6" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0" id="yearsExperience"></h1>
-                            <script>
-                                document.getElementById('yearsExperience').innerText = new Date().getFullYear() - 2021;
-                            </script>
-                            <h5 class="mb-0 mt-3">Years</h5>
+                    <div class="hero-facts">
+                        <div>
+                            <span>Role</span>
+                            <strong>Lead AI Developer</strong>
                         </div>
-                            <h3 class="lh-base mb-0">of professional software delivery across AI, cybersecurity, and full-stack engineering</h3>
-                    </div>
-                    <div class="impact-list">
-                        <div class="impact-item">
-                            <h5>Current leadership</h5>
-                            <p class="mb-0">Lead AI Developer and Project Lead at Adrestia R&amp;D, driving production AI systems and cross-functional delivery.</p>
+                        <div>
+                            <span>Focus</span>
+                            <strong>Cybersecurity + AI Systems</strong>
                         </div>
-                        <div class="impact-item">
-                            <h5>Engineering scope</h5>
-                            <p class="mb-0">Hands-on across Python, Go, Vue, PHP, JavaScript, WebGL, backend services, and model-driven tooling.</p>
-                        </div>
-                        <div class="impact-item">
-                            <h5>Collaboration context</h5>
-                            <p class="mb-0">Contributor across IT6G, EUSOME, REGULAIZE, RAIDO, and CHAMELEON under Horizon Europe programs.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">8</h1>
-                            <h5 class="mb-0 mt-3">Years</h5>
-                        </div>
-                        <h3 class="lh-base mb-0">of study and specialization in computer and software engineering</h3>
-                    </div>
-                    <p class="mb-4">Lead AI Developer at Adrestia R&amp;D, focused on building production-grade intelligent systems in cybersecurity and distributed environments. I design and deploy machine learning and AI-driven solutions with an emphasis on scalable architectures, federated learning, and real-world threat detection.</p>
-                    <p class="mb-4">My background spans full-stack engineering, which lets me bridge research and production systems while leading delivery across multidisciplinary teams.</p>
-                    <p class="mb-0"><strong>Languages:</strong> Greek (native), English (professional working), French (limited working)</p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Capabilities</h1>
-                    <p class="mb-4">A grouped view of the technical and delivery areas I rely on most in production work.</p>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="stack-card h-100">
-                                <p class="stack-label">AI / ML</p>
-                                <h4>Model-driven systems</h4>
-                                <p>LLMs, foundation models, intelligent preprocessing, clustering workflows, semantic labeling, and applied ML system design.</p>
-                                <div class="stack-tags">
-                                    <span>LLMs</span><span>DINOv2</span><span>CLIP</span><span>SigLIP2</span><span>Chronos</span><span>Python</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stack-card h-100">
-                                <p class="stack-label">Backend / Infra</p>
-                                <h4>Services and distributed systems</h4>
-                                <p>Production backend development for cybersecurity and research-driven systems, with an emphasis on scalability and operational reliability.</p>
-                                <div class="stack-tags">
-                                    <span>Go</span><span>Python</span><span>APIs</span><span>Distributed Systems</span><span>Cybersecurity</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stack-card h-100">
-                                <p class="stack-label">Frontend</p>
-                                <h4>Interfaces and visualization</h4>
-                                <p>Modern web interfaces, dashboards, and interactive browser-based experiences for product and research contexts.</p>
-                                <div class="stack-tags">
-                                    <span>Vue.js</span><span>React</span><span>JavaScript</span><span>PHP</span><span>WebGL</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stack-card h-100">
-                                <p class="stack-label">Leadership</p>
-                                <h4>Delivery and product direction</h4>
-                                <p>Leading development teams, translating research into deployable systems, and managing AI-oriented product execution.</p>
-                                <div class="stack-tags">
-                                    <span>Team Leadership</span><span>Product Thinking</span><span>Research Translation</span><span>Execution</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
-                                href="#tab-1">Experience</button>
-                        </li>
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
-                                href="#tab-2">Education</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="timeline-list">
-                                <div class="timeline-item">
-                                    <p class="timeline-date">April 2026 - Present</p>
-                                    <h5>Project Lead Developer</h5>
-                                    <h6>Adrestia R&amp;D</h6>
-                                    <p class="mb-0">Leading AI delivery for cybersecurity and distributed environments, with responsibility across architecture, implementation, and project execution.</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <p class="timeline-date">October 2023 - Present</p>
-                                    <h5>Full-Stack Developer</h5>
-                                    <h6>Adrestia R&amp;D</h6>
-                                    <p class="mb-0">Built Go backend services, Vue-based interfaces, and AI applications in Python across multiple Horizon Europe projects.</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <p class="timeline-date">April 2023 - October 2023</p>
-                                    <h5>Web Developer</h5>
-                                    <h6>Hellenic Mediterranean University</h6>
-                                    <p class="mb-0">Developed web applications with HTML, CSS, JavaScript, and PHP for university and research-related needs.</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <p class="timeline-date">January 2023 - June 2023</p>
-                                    <h5>Workshop Facilitator</h5>
-                                    <h6>Hellenic Mediterranean University</h6>
-                                    <p class="mb-0">Taught Computer Organization workshop sessions focused on Assembly MIPS.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row gy-4 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>Bachelor's Degree in Computer Software Engineering</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2016 - 2022 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
-  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
-  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
-</svg></p>
-                                    <h6 class="mb-0">Hellenic Mediterranean University</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Master of Science in Computer Engineering</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">October 2022 - Present</p>
-                                    <h6 class="mb-0">Hellenic Mediterranean University</h6>
-                                </div>
-                            </div>
+                        <div>
+                            <span>Base</span>
+                            <strong>Heraklion, Greece</strong>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Expertise End -->
-    <div class="container-xxl py-6" id="projects-research">
-        <div class="container">
-            <div class="row g-5 align-items-start mb-5">
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-4">Projects &amp; Research</h1>
-                    <p class="mb-0">Selected Horizon Europe work and publication output across AI, cybersecurity, and multimodal data tooling.</p>
-                </div>
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="project-overview rounded p-4 p-lg-5">
-                        <p class="text-primary mb-2">Horizon Europe Portfolio</p>
-                        <h3 class="mb-3">AI systems, cybersecurity delivery, and cross-domain data tooling</h3>
-                        <p class="mb-0">Current work spans distributed systems, intelligent cybersecurity platforms, and production-facing AI tools. The project stack below highlights EU-funded collaborations and the research output directly connected to this work.</p>
+        <section class="cred-strip">
+            <div class="container">
+                <div class="cred-grid wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="cred-item">
+                        <span class="cred-number" id="yearsExperience"></span>
+                        <span class="cred-label">Years building software professionally</span>
+                    </div>
+                    <div class="cred-item">
+                        <span class="cred-number">5</span>
+                        <span class="cred-label">Horizon Europe projects</span>
+                    </div>
+                    <div class="cred-item">
+                        <span class="cred-number">1</span>
+                        <span class="cred-label">IEEE CAI 2026 publication</span>
+                    </div>
+                    <div class="cred-item">
+                        <span class="cred-number">2</span>
+                        <span class="cred-label">PyPI tooling packages</span>
                     </div>
                 </div>
             </div>
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="project-card h-100">
-                        <div class="project-logo project-logo-image">
-                            <img src="img/itrust6g-logo.png" alt="iTrust6G logo">
-                        </div>
-                        <p class="project-type">Horizon Europe</p>
-                        <h4>IT6G</h4>
-                        <p class="project-role">Full-stack and cybersecurity engineering</p>
-                        <p class="mb-0">Contributed to secure next-generation distributed systems work, bridging implementation needs across backend services, interfaces, and AI-oriented delivery tasks.</p>
-                    </div>
+            <script>
+                document.getElementById('yearsExperience').innerText = new Date().getFullYear() - 2021;
+            </script>
+        </section>
+
+        <section class="section-block" id="about">
+            <div class="container">
+                <div class="section-heading wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-kicker">About</p>
+                    <h2 class="section-title">A research-aware engineer focused on systems that have to work outside the lab.</h2>
                 </div>
-                <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="project-card h-100">
-                        <div class="project-logo project-logo-image">
-                            <img src="img/eusome-logo.png" alt="EUSOME logo">
-                        </div>
-                        <p class="project-type">Horizon Europe</p>
-                        <h4>EUSOME</h4>
-                        <p class="project-role">AI engineering and product delivery</p>
-                        <p class="mb-0">Supported production-grade research collaboration through applied engineering, AI implementation work, and delivery-focused system development.</p>
+                <div class="about-layout">
+                    <div class="about-story wow fadeInUp" data-wow-delay="0.2s">
+                        <p>Lead AI Developer at Adrestia R&amp;D, focused on building production-grade intelligent systems in cybersecurity and distributed environments. I design and deploy machine learning and AI-driven solutions with an emphasis on scalable architectures, federated learning, and real-world threat detection.</p>
+                        <p>My background spans full-stack engineering, which lets me bridge research and production systems while leading delivery across multidisciplinary teams.</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="project-card h-100">
-                        <div class="project-logo">RG</div>
-                        <p class="project-type">Horizon Europe</p>
-                        <h4>REGULAIZE</h4>
-                        <p class="project-role">Applied development for intelligent systems</p>
-                        <p class="mb-0">Participated in scalable intelligent-system development and operational research delivery, helping move ideas toward deployable software.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="project-card h-100">
-                        <div class="project-logo project-logo-image">
-                            <img src="img/raido-logo.webp" alt="RAIDO logo">
-                        </div>
-                        <p class="project-type">Horizon Europe</p>
-                        <h4>RAIDO</h4>
-                        <p class="project-role">Backend and AI-focused implementation</p>
-                        <p class="mb-0">Worked on AI-driven backend implementation in distributed environments, balancing research goals with real deployment constraints.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="project-card h-100">
-                        <div class="project-logo project-logo-image">
-                            <img src="img/chameleon-logo.png" alt="CHAMELEON logo">
-                        </div>
-                        <p class="project-type">Horizon Europe</p>
-                        <h4>CHAMELEON</h4>
-                        <p class="project-role">Cross-functional engineering delivery</p>
-                        <p class="mb-0">Contributed across frontend, backend, and AI-enabled solution delivery in a collaborative research and engineering environment.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="project-card h-100 project-card-accent">
-                        <div class="project-logo">AI</div>
-                        <p class="project-type">Publication</p>
-                        <h4>Foundation Model-Driven Auto-Annotation</h4>
-                        <p class="project-role">Research contribution and tooling</p>
-                        <p class="mb-0">IEEE CAI 2026 paper and companion tools for multimodal zero-shot annotation using foundation models.</p>
+                    <div class="about-cards wow fadeInUp" data-wow-delay="0.3s">
+                        <article class="about-card">
+                            <p class="mini-kicker">Current leadership</p>
+                            <h3>Adrestia R&amp;D</h3>
+                            <p>Driving production AI systems and project execution across collaborative engineering teams.</p>
+                        </article>
+                        <article class="about-card">
+                            <p class="mini-kicker">Technical scope</p>
+                            <h3>End-to-end systems</h3>
+                            <p>Hands-on across Python, Go, Vue, PHP, JavaScript, WebGL, backend services, and model-driven tooling.</p>
+                        </article>
+                        <article class="about-card">
+                            <p class="mini-kicker">Languages</p>
+                            <h3>Greek, English, French</h3>
+                            <p>Greek native, English professional working, French limited working.</p>
+                        </article>
                     </div>
                 </div>
             </div>
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="case-study h-100">
-                        <p class="case-label">Featured Work</p>
-                        <h4>AI toolchains for data annotation</h4>
-                        <p>Built production-ready tooling for visual and temporal annotation workflows using foundation models and adaptive clustering.</p>
+        </section>
+
+        <section class="section-block section-soft" id="skill">
+            <div class="container">
+                <div class="section-heading wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-kicker">Capabilities</p>
+                    <h2 class="section-title">An engineering profile built around model systems, platform delivery, and product execution.</h2>
+                </div>
+                <div class="capability-grid">
+                    <article class="capability-card wow fadeInUp" data-wow-delay="0.15s">
+                        <p class="mini-kicker">AI / ML</p>
+                        <h3>Model-driven systems</h3>
+                        <p>LLMs, foundation models, intelligent preprocessing, clustering workflows, semantic labeling, and applied ML system design.</p>
+                        <div class="stack-tags">
+                            <span>LLMs</span><span>DINOv2</span><span>CLIP</span><span>SigLIP2</span><span>Chronos</span><span>Python</span>
+                        </div>
+                    </article>
+                    <article class="capability-card wow fadeInUp" data-wow-delay="0.2s">
+                        <p class="mini-kicker">Backend / Infra</p>
+                        <h3>Services and distributed systems</h3>
+                        <p>Production backend development for cybersecurity and research-driven systems, with emphasis on scale, reliability, and real deployment constraints.</p>
+                        <div class="stack-tags">
+                            <span>Go</span><span>APIs</span><span>Distributed Systems</span><span>Cybersecurity</span>
+                        </div>
+                    </article>
+                    <article class="capability-card wow fadeInUp" data-wow-delay="0.25s">
+                        <p class="mini-kicker">Frontend</p>
+                        <h3>Interfaces and visualization</h3>
+                        <p>Modern web interfaces, dashboards, and interactive browser experiences for product and research contexts.</p>
+                        <div class="stack-tags">
+                            <span>Vue.js</span><span>React</span><span>JavaScript</span><span>PHP</span><span>WebGL</span>
+                        </div>
+                    </article>
+                    <article class="capability-card wow fadeInUp" data-wow-delay="0.3s">
+                        <p class="mini-kicker">Leadership</p>
+                        <h3>Research-to-product execution</h3>
+                        <p>Leading development teams, translating research into deployable systems, and managing AI-oriented product execution.</p>
+                        <div class="stack-tags">
+                            <span>Team Leadership</span><span>Product Thinking</span><span>Execution</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block" id="projects-research">
+            <div class="container">
+                <div class="section-heading wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-kicker">Selected Work</p>
+                    <h2 class="section-title">Horizon Europe delivery, publication work, and systems that connect research to production.</h2>
+                </div>
+
+                <div class="spotlight-grid">
+                    <article class="spotlight-card spotlight-primary wow fadeInUp" data-wow-delay="0.15s">
+                        <p class="mini-kicker">Featured Publication</p>
+                        <h3>Foundation Model-Driven Auto-Annotation</h3>
+                        <p>Contributed to an IEEE CAI 2026 publication on multimodal zero-shot annotation using DINOv2, CLIP, SigLIP2, and Chronos-based workflows.</p>
                         <ul class="case-points">
-                            <li>Reduced manual annotation effort by up to 98.8%</li>
-                            <li>Connected research models to practical preprocessing pipelines</li>
-                            <li>Shipped companion packages for direct reuse</li>
+                            <li>Up to 98.8% reduction in manual annotation effort</li>
+                            <li>Production-ready tooling for vision and time series</li>
+                            <li>Direct path from research models to practical preprocessing</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="case-study h-100">
-                        <p class="case-label">Featured Work</p>
-                        <h4>Cybersecurity and distributed systems delivery</h4>
-                        <p>Worked on backend and AI-oriented systems in cybersecurity contexts where reliability, scale, and research alignment all mattered.</p>
-                        <ul class="case-points">
-                            <li>Go services and Python AI components</li>
-                            <li>Cross-team delivery inside Horizon Europe projects</li>
-                            <li>Research-to-production engineering mindset</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="case-study h-100">
-                        <p class="case-label">Featured Work</p>
-                        <h4>Frontend and interaction systems</h4>
-                        <p>Designed and implemented web interfaces, research tools, and interactive browser experiences across academic and product environments.</p>
-                        <ul class="case-points">
-                            <li>Vue, React, JavaScript, PHP, and WebGL work</li>
-                            <li>3D web applications for exhibition and product use</li>
-                            <li>Strong bridge between technical systems and usable interfaces</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5 align-items-start">
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="border rounded p-4 p-lg-5">
-                        <p class="text-primary mb-2">Featured Publication</p>
-                        <h3 class="mb-3">Foundation Model-Driven Auto-Annotation: A Multi-Modal Toolbox for General-Purpose Data Labeling</h3>
-                        <p class="mb-3">Contributed to a publication on unsupervised annotation across visual and temporal domains using foundation models including DINOv2, CLIP, SigLIP2, and the Chronos family. The work presents AutoAnnotate-Vision and AutoAnnotate-TimeSeries, reducing manual annotation effort by up to 98.8% while preserving semantic coherence.</p>
-                        <p class="mb-4"><strong>Citation:</strong> N. Ntampakis et al., 2026 IEEE Conference on Artificial Intelligence (CAI), Granada, Spain, 2026, pp. 1677-1682.</p>
-                        <div class="d-flex flex-wrap gap-3">
+                        <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
                             <a class="btn btn-primary py-2 px-4" href="https://doi.org/10.1109/CAI68641.2026.11536544" target="_blank" rel="noopener">View Paper</a>
-                            <a class="btn btn-outline-primary py-2 px-4" href="https://pypi.org/project/autoannotatevision/" target="_blank" rel="noopener">AutoAnnotate-Vision</a>
-                            <a class="btn btn-outline-primary py-2 px-4" href="https://pypi.org/project/autoannotate-timeseries/" target="_blank" rel="noopener">AutoAnnotate-TimeSeries</a>
+                            <a class="btn btn-outline-primary py-2 px-4" href="https://pypi.org/project/autoannotatevision/" target="_blank" rel="noopener">Vision Package</a>
+                            <a class="btn btn-outline-primary py-2 px-4" href="https://pypi.org/project/autoannotate-timeseries/" target="_blank" rel="noopener">Time-Series Package</a>
+                        </div>
+                    </article>
+
+                    <article class="spotlight-card wow fadeInUp" data-wow-delay="0.25s">
+                        <p class="mini-kicker">Experience Timeline</p>
+                        <div class="timeline-compact">
+                            <div class="timeline-compact-item">
+                                <span>2026 - Present</span>
+                                <strong>Project Lead Developer</strong>
+                                <p>Leading AI delivery at Adrestia R&amp;D across cybersecurity and distributed environments.</p>
+                            </div>
+                            <div class="timeline-compact-item">
+                                <span>2023 - Present</span>
+                                <strong>Full-Stack Developer</strong>
+                                <p>Built Go backend services, Vue interfaces, and Python AI applications across Horizon Europe projects.</p>
+                            </div>
+                            <div class="timeline-compact-item">
+                                <span>2021 - 2023</span>
+                                <strong>University &amp; product engineering roles</strong>
+                                <p>Worked across web applications, teaching support, and interactive web systems at HMU and Oqullar.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="project-board">
+                    <article class="project-story wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="project-story-head">
+                            <div class="project-logo project-logo-image"><img src="img/itrust6g-logo.png" alt="iTrust6G logo"></div>
+                            <div>
+                                <p class="project-type">Horizon Europe</p>
+                                <h3>IT6G</h3>
+                            </div>
+                        </div>
+                        <p class="project-role">Full-stack and cybersecurity engineering</p>
+                        <p>Contributed to secure next-generation distributed systems work, bridging backend services, interfaces, and AI-oriented delivery tasks.</p>
+                    </article>
+                    <article class="project-story wow fadeInUp" data-wow-delay="0.15s">
+                        <div class="project-story-head">
+                            <div class="project-logo project-logo-image"><img src="img/eusome-logo.png" alt="EUSOME logo"></div>
+                            <div>
+                                <p class="project-type">Horizon Europe</p>
+                                <h3>EUSOME</h3>
+                            </div>
+                        </div>
+                        <p class="project-role">AI engineering and product delivery</p>
+                        <p>Supported production-grade research collaboration through applied engineering, AI implementation work, and delivery-focused system development.</p>
+                    </article>
+                    <article class="project-story wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="project-story-head">
+                            <div class="project-logo">RG</div>
+                            <div>
+                                <p class="project-type">Horizon Europe</p>
+                                <h3>REGULAIZE</h3>
+                            </div>
+                        </div>
+                        <p class="project-role">Applied development for intelligent systems</p>
+                        <p>Participated in scalable intelligent-system development and operational research delivery, helping move ideas toward deployable software.</p>
+                    </article>
+                    <article class="project-story wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="project-story-head">
+                            <div class="project-logo project-logo-image"><img src="img/raido-logo.webp" alt="RAIDO logo"></div>
+                            <div>
+                                <p class="project-type">Horizon Europe</p>
+                                <h3>RAIDO</h3>
+                            </div>
+                        </div>
+                        <p class="project-role">Backend and AI-focused implementation</p>
+                        <p>Worked on AI-driven backend implementation in distributed environments, balancing research goals with real deployment constraints.</p>
+                    </article>
+                    <article class="project-story wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="project-story-head">
+                            <div class="project-logo project-logo-image"><img src="img/chameleon-logo.png" alt="CHAMELEON logo"></div>
+                            <div>
+                                <p class="project-type">Horizon Europe</p>
+                                <h3>CHAMELEON</h3>
+                            </div>
+                        </div>
+                        <p class="project-role">Cross-functional engineering delivery</p>
+                        <p>Contributed across frontend, backend, and AI-enabled solution delivery in a collaborative research and engineering environment.</p>
+                    </article>
+                </div>
+
+                <div class="case-grid">
+                    <article class="case-study wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="case-label">Case Study</p>
+                        <h3>AI toolchains for data annotation</h3>
+                        <p>Built production-ready tooling for visual and temporal annotation workflows using foundation models and adaptive clustering.</p>
+                    </article>
+                    <article class="case-study wow fadeInUp" data-wow-delay="0.2s">
+                        <p class="case-label">Case Study</p>
+                        <h3>Cybersecurity and distributed systems delivery</h3>
+                        <p>Worked on backend and AI-oriented systems in cybersecurity contexts where reliability, scale, and research alignment all mattered.</p>
+                    </article>
+                    <article class="case-study wow fadeInUp" data-wow-delay="0.3s">
+                        <p class="case-label">Case Study</p>
+                        <h3>Frontend and interaction systems</h3>
+                        <p>Designed and implemented web interfaces, research tools, and interactive browser experiences across academic and product environments.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block section-soft" id="contact">
+            <div class="container contact-layout">
+                <div class="contact-copy wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-kicker">Contact</p>
+                    <h2 class="section-title">Available for research-heavy engineering, AI systems work, and technical collaboration.</h2>
+                    <div class="contact-list">
+                        <div>
+                            <span>Base</span>
+                            <strong>Heraklion, Greece</strong>
+                        </div>
+                        <div>
+                            <span>Email</span>
+                            <strong>kolokouris.babis@gmail.com</strong>
+                        </div>
+                        <div>
+                            <span>Links</span>
+                            <div class="d-flex pt-2 gap-2">
+                                <a class="btn btn-square btn-primary" href="https://kawaii-kitsune.github.io"><i class="fas fa-globe"></i></a>
+                                <a class="btn btn-square btn-primary" href="https://github.com/kawaii-kitsune"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-square btn-primary" href="https://www.linkedin.com/in/charalampos-kolokouris-02453a206"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="publication-side h-100">
-                        <p class="case-label">Research Output</p>
-                        <h4>Selected output</h4>
-                        <ul class="case-points">
-                            <li>IEEE CAI 2026 paper contribution</li>
-                            <li>autoannotatevision PyPI package</li>
-                            <li>autoannotate-timeseries PyPI package</li>
-                            <li>Foundation-model workflows for multimodal labeling</li>
-                        </ul>
-                    </div>
+                <div class="contact-form-wrap wow fadeInUp" data-wow-delay="0.2s">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdM-OiEgJ2qdP2Yt4JEYgq_zYZ9NotKF7i8eKFdPvAR951_Bg/viewform?embedded=true"
+                        frameborder="0" style="width: 100%; height: 460px; border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">Loading…</iframe>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
+            <p class="mb-0">&copy; <a class="text-primary" href="#home">Babis Kolokouris</a>. All rights reserved.</p>
+            <p class="mb-0 footer-note">Master of Science in Computer Engineering • AI systems • Horizon Europe collaborations</p>
         </div>
-    </div>
+    </footer>
 
-
-    <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Contact me</h1>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-2">Based in:</p>
-                    <h3 class="fw-bold">Heraklion, Greece</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">kolokouris.babis@gmail.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Find me online:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="https://kawaii-kitsune.github.io"><i class="fas fa-globe"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://github.com/kawaii-kitsune"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/charalampos-kolokouris-02453a206"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdM-OiEgJ2qdP2Yt4JEYgq_zYZ9NotKF7i8eKFdPvAR951_Bg/viewform?embedded=true" frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0">Loading…</iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Map Start -->
-    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container-xxl pt-5 px-0">
-            <div class="bg-dark">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26042.83690136964!2d25.114428356510622!3d35.32201464584041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149a586bd068e13f%3A0x400bd2ce2b9b6f0!2sHeraklion%2C%20Greece!5e0!3m2!1sen!2sbd!4v1697532426180!5m2!1sen!2sbd" 
-                    frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-            </div>
-        </div>
-    </div>
-    <!-- Map End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4" >
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom text-primary" href="#">Babis Kolokouris</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end"hidden>
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom text-primary" href="https://htmlcodex.com" >HTML Codex</a>
-                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
-                        target="_blank">ThemeWagon</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- Copyright End -->
-
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -499,8 +372,6 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
