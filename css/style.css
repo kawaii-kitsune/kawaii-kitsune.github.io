@@ -332,6 +332,40 @@ a {
     font-weight: 800;
 }
 
+.skill-edu-grid {
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(320px, 1.05fr);
+    gap: 1rem;
+}
+
+.skill-stack {
+    display: grid;
+    gap: 1rem;
+}
+
+.skill-group,
+.edu-panel {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, .82);
+    box-shadow: 0 18px 44px rgba(24, 58, 90, .05);
+}
+
+.skill-group + .skill-group {
+    margin-top: 0;
+}
+
+.skill-group h3 {
+    margin-bottom: .65rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.skill-group p {
+    max-width: 56ch;
+}
+
 .capability-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -506,16 +540,23 @@ a {
 }
 
 @media (max-width: 1399.98px) {
+    .skill-edu-grid,
+    .about-layout,
+    .spotlight-grid,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
     .project-board {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .capability-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .about-cards {
         grid-template-columns: 1fr;
+    }
+
+    .skill-stack {
+        gap: .75rem;
     }
 }
 
@@ -529,6 +570,7 @@ a {
     }
 
     .hero-grid,
+    .skill-edu-grid,
     .about-layout,
     .spotlight-grid,
     .contact-layout {
@@ -538,10 +580,6 @@ a {
     .cred-grid,
     .case-grid,
     .project-board {
-        grid-template-columns: 1fr;
-    }
-
-    .capability-grid {
         grid-template-columns: 1fr;
     }
 
