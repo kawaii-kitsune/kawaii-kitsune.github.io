@@ -130,6 +130,12 @@ p {
     box-shadow: none !important;
 }
 
+.brand-badge {
+    background: rgba(24, 58, 90, .08);
+    border: 1px solid rgba(24, 58, 90, .08);
+    border-radius: 999px;
+}
+
 .navbar .navbar-nav .nav-link {
     padding: 20px 15px;
     color: var(--muted);
@@ -192,6 +198,10 @@ p {
     color: var(--primary);
     font-weight: 700;
     border: 1px solid rgba(24, 58, 90, .08);
+}
+
+.hero-actions {
+    padding-bottom: 1.25rem;
 }
 
 .hero-visual {
@@ -577,6 +587,10 @@ p {
         font-size: calc(1.9rem + 1.7vw);
     }
 
+    .hero-actions {
+        padding-bottom: .5rem;
+    }
+
     #contact .container {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -622,7 +636,7 @@ p {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(98, 68, 197, .9);
+    background: rgba(24, 58, 90, .9);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
