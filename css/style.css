@@ -274,6 +274,34 @@ a {
     letter-spacing: -.04em;
 }
 
+.achievement-strip {
+    padding: 0 0 2.5rem;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.achievement-item {
+    padding: 1.25rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, .78);
+    box-shadow: 0 14px 34px rgba(24, 58, 90, .04);
+}
+
+.achievement-label {
+    display: inline-block;
+    margin-bottom: .65rem;
+    color: var(--secondary);
+    font-size: .76rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
 .section-block {
     padding: 4.5rem 0;
 }
@@ -481,6 +509,11 @@ a {
     font-weight: 700;
 }
 
+.project-meta {
+    margin-bottom: .55rem;
+    font-size: .92rem;
+}
+
 .case-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -551,6 +584,10 @@ a {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+
     .about-cards {
         grid-template-columns: 1fr;
     }
@@ -578,6 +615,7 @@ a {
     }
 
     .cred-grid,
+    .achievement-grid,
     .case-grid,
     .project-board {
         grid-template-columns: 1fr;
